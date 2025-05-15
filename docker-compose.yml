@@ -1,0 +1,14 @@
+services:
+    backend:
+        build: ./tp-final-docker-back
+        ports:
+            - "1992:3000"
+        restart: always
+
+    frontend:
+        build: ./client-livres
+        ports:
+            - "5001:5001"
+        restart: always
+        depends_on:
+            - backend
