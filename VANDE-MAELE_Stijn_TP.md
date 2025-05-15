@@ -78,6 +78,7 @@ CMD ["node", "dist/index.js"]
 ```
 
 > node:20-alpine is a very lightweight node image.
+> I would like to find the RUN command to add to the dockerfile that woudl generate the /dist/index.js other then putting 'npm run start' after RUN npm install on image creation. For now it's not an issue sonce the /dist folder is included in the copy.
 
 ### Create: .dockerignore
 
